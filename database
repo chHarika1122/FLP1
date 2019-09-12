@@ -74,7 +74,15 @@ CREATE TABLE `wishlist_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  
-
+CREATE TABLE `pricedetails` (
+  `product_Id` varchar(45) NOT NULL,
+  `product_Name` varchar(70) DEFAULT NULL,
+  `product_Price` bigint(10) DEFAULT NULL,
+  `product_Quantity` int(10) DEFAULT NULL,
+  `Total` bigint(100) DEFAULT NULL,
+  `customer_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`product_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
 
  
